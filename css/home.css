@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-background: #141414;
+}
+
+body{
+    background-color: var(--color-background);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*nav-bar*/
+nav{
+    background-color: transparent;
+    height: 8vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.nav-options img{
+    height: 30px;
+    width: auto;
+}
+
+.nav-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 55px;
+    margin-top: 5px;
+}
+
+.nav-logo-links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.logoNetflix{
+    height: auto;
+    width: 7em;
+    margin: 0px 30px 0px 55px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.busca{
+    background-color: cornflowerblue;
+}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    -webkit-mask-image: linear-gradient(to top, transparent 3%, #141414 20%);
+}
+
+.banner{
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.banner p{
+    margin: 1% 60% 2% 0%;
+    text-align: justify;
+    color: white;
+}
+
+.banner video{
+	position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 83vh;
+    width: 100vw;
+}
+
+.banner .content{
+    position: relative;
+    z-index: 1;
+}
+
+#poster{
+    width: auto;
+    height: 15em;
+}
+
+.content{
+    margin: 6em 5em;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2px;
+    border: solid rgb(255, 255, 255, 0.0);
+
+    height: 7vh;
+    width: 13vw;
+
+    font-size: 15px;
+    padding: 25px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+#play{
+    background-color: rgb(255, 255, 255);
+}
+#play p{
+    color: black;
+}
+
+#play:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+#info{
+    background-color: rgba(108, 108, 108, 0.5);
+    color: white;
+}
+
+#info img{
+    height: 25px;
+}
+
+#info:hover{
+    background-color: rgba(108, 108, 108, 0.3);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.buttons img{
+    height: 1em;
+    width: auto;
+    margin: 0 5px;
+}
+
+.buttons p{
+    margin: 0 5px;
+}
+
+/* main */
+.row img{
+    height: 17em;
+    width: auto;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.row img:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+
+.row span{
+    font-size: 18px;
+}
+
+.row{
+    color: white;
+    margin: 0em 3em 4em 3em;
+    z-index: 2;
+    position: relative;
+}
+
+#row-1{
+    margin-top: -6rem;
+}
+
+.row h2{
+    padding-bottom: 5px;
+}
+
+.row-imgs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 3em;
+}
+
+.movie{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-movie{
+    background-color: rgb(20, 20, 20, 0);
+    border: none;
+    padding: 0;
+}
+
+@media (max-width: 900px){
+    .buttons p{
+        display: none;
+    }
+
+    .buttons img{
+        height: 25px;
+        margin: 0;
+    }
+
+    #info img{
+        height: 30px;
+    }
+    #poster{
+        height: 12em;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .logoNetflix{
+        height: auto;
+        width: 7em;
+        margin: 0 30px;
+    }
+
+    /*banner*/
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6em 20px;
+    }
+
+    #poster{
+        height: 6em;
+    }
+
+    .banner p{
+        margin: 10px 0;
+        text-align: justify;
+        color: white;
+    }
+
+    .buttons img{
+        height: 15px;
+    }
+
+    .btn{
+        padding: 0;
+    }
+
+}

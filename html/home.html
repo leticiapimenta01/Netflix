@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="/imgs/icons/netflix.png" type="image/x-icon">
+
+    <!-- font-google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+
+    <title>Início - Netflix</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo-links">
+                <img class="logoNetflix" src="/imgs/icons/logoNetflix.png" alt="netflix">
+            </div>
+            <div class="nav-options">
+                <a href="/html/busca.html"><img src="/imgs/icons/lupa.png" alt="lupa" class="lupa"></a>
+            </div>
+        </nav>
+        <div class="banner" id="banner">
+            <video autoplay loop muted>
+                <source src="/imgs/stranger_things/stranger-trailer.mp4" type="video/mp4" id="video">
+            </video>
+            <div class="content">
+                <img src="/imgs/stranger_things/strangerThings-name.png" id="poster" alt="stranger-things">
+                <div class="subtitle">
+                    <p id="sinopse">Um grupo de amigos se envolve em uma série de eventos sobrenaturais na pacata cidade de Hawkins. Eles enfrentam criaturas monstruosas, agências secretas do governo e se aventuram em dimensões paralelas.</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn" id="play" onclick="irYoutube()"><img src="/imgs/icons/botao-play.png" alt=""> <p>Assistir</p> </button>
+                    <button class="btn" id="info" onclick="irInfo()"><img src="/imgs/icons/button-info.png" alt=""> <p>Mais informações</p> </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="row" id="row-1">
+                <h2>No Cinema</h2>
+                <div class="row-imgs" id="cinema">
+                    <div class="movie">
+                        <a href=""><img src="" alt=""></a>
+                        <span>Titulo do Filme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Melhores Dramas de 2022</h2>
+            <div class="row-imgs" id="dramaMovies">
+                <div class="movie">
+                    <a href=""><img src="" alt=""></a>
+                    <span>Titulo do Filme</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Comédias do Will Ferrell</h2>
+            <div class="row-imgs" id="comediaMovies">
+                <div class="movie">
+                    <a href=""><img src="" alt=""></a>
+                    <span>Titulo do Filme</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+        
+</body>
+</html>

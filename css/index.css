@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --color-hover: white;
+    --font-family: Verdana;
+    --color-background: #141414;
+    --color-cinza-claro: #828282;
+    --color-tranparente: rgba(20, 20, 20, 0.1);
+}
+
+body{
+    background-color: var(--color-background);
+    color: white;
+}
+
+nav{
+    background-image: repeating-linear-gradient(#000000, #141414);
+    background-repeat:repeat-x;
+}
+
+.images{
+    background-color: red;
+}
+
+nav img{
+    height: auto;
+    width: 9em;
+    margin: 0px 60px;
+    padding-top: 20px;
+}
+
+main{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main-images{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main img{
+    border-radius: 15px;
+    margin: 0em 1em;
+    border: 5px solid var(--color-tranparente);
+
+    cursor: pointer;
+}
+
+main img:hover{
+    border: 5px solid var(--color-hover) ;
+}
+
+.image:hover p{
+    color: white;
+}
+
+.image img{
+    height: 12em;
+    width: 12em;
+}
+
+
+main h1{
+    font-size: 4em;
+}
+
+main p{
+    color: var(--color-cinza-claro);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 7em;
+}
+
+button{
+    background: var(--color-background);
+    cursor: pointer;
+    color: var(--color-cinza-claro);
+
+    border-color: var(--color-cinza-claro);
+    border-style: solid;
+
+    font-size: 25px;
+    padding: 10px 30px;
+
+    margin-bottom: 4em;
+}
+
+button:hover{
+    color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+ @media (max-width: 633px){
+    main img{
+        height: 15vh;
+        width: auto;
+    }
+
+    main h1{
+        font-size: 2.5em;
+    } 
+}
+
+@media (max-width: 960px){
+    footer{
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 420px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
