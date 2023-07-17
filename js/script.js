@@ -97,7 +97,7 @@ console.log(user1);
 
 /* Clique do botão para ir para outra página */
 function irYoutube() {
-    window.location.href = "https://youtu.be/yTX0HxTq9wo";
+    window.location.href = "https://youtu.be/otutSrxYpa4";
 }
 
 function irInfo() {
